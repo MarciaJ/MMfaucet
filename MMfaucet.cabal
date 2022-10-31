@@ -1,0 +1,32 @@
+cabal-version:      2.4
+name:               MMFaucet
+version:            0.1.0.0
+synopsis:           My first bootstrap project
+homepage:
+license-file:       LICENSE
+author:             Marcia Johnson
+maintainer:         mail4marcia@gmail.com
+category:           Education
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules:  Faucet
+    build-depends:      base ^>=4.14.1.0
+                      , aeson -any
+                      , bytestring -any
+                      , containers -any
+                      , data-default 
+                      , freer-extras -any
+                      , playground-common -any
+                      , plutus-contract -any
+                      , plutus-ledger -any
+                      , plutus-ledger-api -any
+                      , plutus-ledger-constraints -any
+                      , plutus-tx -any
+                      , plutus-tx-plugin -any
+                      , text -any
+                      , lens -any
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+    ghc-options:         -Wall -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas -fno-strictness -fno-spec-constr -fno-specialise
